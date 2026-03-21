@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Iguazu Falls | Natural Wonder</title>
+  <meta name="description" content="Discover Iguazu Falls: key facts, weather information, and stunning landscapes of this natural wonder between Argentina and Brazil.">
+  <link rel="stylesheet" href="styles/places.css">
+</head>
+<body>
+
+  <header class="top-banner">
+    <h1>Iguazu Falls</h1>
+  </header>
+
+  <div class="page-container">
+    <div class="hero-background">
+      <div class="country-grid">
+
+        <section class="data-section">
+        <h2>📊 Key Facts</h2>
+        <div class="data-grid">
+        <div class="data-item"><span class="data-label">Location:</span><span class="data-value">Misiones (ARG) / Paraná (BRA)</span></div>
+        <div class="data-item"><span class="data-label">River:</span><span class="data-value">Iguazu River</span></div>
+        <div class="data-item"><span class="data-label">Drops:</span><span class="data-value">Approx. 275</span></div>
+        <div class="data-item"><span class="data-label">Max Height:</span><span class="data-value">82 meters (Devil's Throat)</span></div>
+        <div class="data-item"><span class="data-label">Total Width:</span><span class="data-value">2.7 kilometers</span></div>
+        <div class="data-item"><span class="data-label">Avg. Flow:</span><span class="data-value">1,746 m³/s</span></div>
+        <div class="data-item"><span class="data-label">Status:</span><span class="data-value">World Heritage Site (UNESCO)</span></div>
+        <div class="data-item"><span class="data-label">Park:</span><span class="data-value">Iguazu National Park</span></div>
+      </div>
+    </section>
+
+    <section class="weather-section">
+      <div class="weather-header">
+        <h2 class="weather-title weather-heading-with-icon">
+          Current Weather
+          <span class="weather-icon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32" style="color: #F9A825;">
+              <path d="M12 2v3m0 14v3m10-10h-3M5 12H2m17.07-7.07l-2.12 2.12M7.05 16.95l-2.12 2.12M19.07 19.07l-2.12-2.12M7.05 7.05L4.93 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="12" cy="12" r="5"></circle>
+            </svg>
+          </span>
+        </h2>
+      </div>
+      <div class="weather-details" id="weatherDetails">
+        <div class="weather-row"><span class="weather-label">Temperature:</span><span class="weather-value" id="tempValue">--</span></div>
+        <div class="weather-row"><span class="weather-label">Conditions:</span><span class="weather-value">Sunny & Humid</span></div>
+        <div class="weather-row"><span class="weather-label">Wind:</span><span class="weather-value" id="windValue">--</span></div>
+        <div class="weather-row"><span class="weather-label">Wind Chill:</span><span class="weather-value" id="windChillDisplay">--</span></div>
+      </div>
+    </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-line">© <span id="currentYear"></span> 
+        <a>Ivan Gonzalez</a> | 
+        <a href="https://iguazuargentina.com/" target="_blank" rel="noopener noreferrer">Iguazu National Park</a>
+      </div>
+      <div class="footer-line">📍 Border between Argentina and Brazil</div>
+      <div class="footer-line">Last Modification: <span id="lastModifiedDate"></span></div>
+    </div>
+  </footer>
+</div>
+
+<script src="scripts/places.js" defer></script>
+</body>
+</html>
