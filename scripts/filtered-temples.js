@@ -65,7 +65,7 @@ const temples = [
     dedicated: "1986, October, 9",
     area: 61900,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/400x250/buenos-aires-argentina-temple-exterior-129930-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/buenos-aires-argentina/800x500/buenos-airies-argentina-temple-1009069-wallpaper.jpg"
   },
   {
     templeName: "Brigham City Utah",
@@ -73,7 +73,7 @@ const temples = [
     dedicated: "2012, September, 23",
     area: 16700,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brigham-city-utah/400x250/brigham-city-temple-exterior-1325259-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/brigham-city-utah/800x500/brigham-city-temple-lds-1027480-wallpaper.jpg"
   },
   {
     templeName: "Columbia River Washington",
@@ -81,7 +81,7 @@ const temples = [
     dedicated: "2009, March, 22",
     area: 16250,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/columbia-river-washington/400x250/columbia-river-washington-temple-exterior-1075618-wallpaper.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/columbia-river-washington/800x500/columbia-river-temple-lds-130323-wallpaper.jpg"
   }
 ];
 
