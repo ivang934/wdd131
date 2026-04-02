@@ -1,0 +1,96 @@
+/* Color Schema Implementation */
+:root {
+    --primary-color: #2A5A3B; 
+    --secondary-color: #E67E22; 
+    --bg-color: #F4F6F6; 
+    --text-color: #333333; 
+    --accent-bg: #FFFFFF; 
+}
+
+/* Typography Implementation */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+/* General Layout */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--accent-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Specific section styling */
+.color-palette {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-swatch {
+    flex: 1;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.swatch-primary { background-color: var(--primary-color); }
+.swatch-secondary { background-color: var(--secondary-color); }
+.swatch-bg { background-color: var(--bg-color); color: var(--text-color); text-shadow: none; border: 1px solid #ccc; }
+.swatch-text { background-color: var(--text-color); }
+
+.wireframe-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.wireframe-box {
+    border: 2px dashed var(--primary-color);
+    padding: 2rem;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+ul {
+    list-style-type: square;
+    color: var(--secondary-color);
+}
+
+ul li span {
+    color: var(--text-color);
+}
