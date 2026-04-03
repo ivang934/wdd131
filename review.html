@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your product review has been submitted successfully." />
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Review Submitted!</h1>
+  </header>
+
+  <main class="form-wrapper confirmation">
+
+    <div class="confirm-icon">&#10003;</div>
+    <h2>Thank You for Your Review!</h2>
+    <p class="confirm-msg">Your feedback helps others make better decisions. We appreciate you taking the time to share your experience.</p>
+
+    <div class="review-count-box">
+      <span class="count-label">Total Reviews Submitted</span>
+      <span class="count-number" id="reviewCount">0</span>
+    </div>
+
+    <div class="review-summary" id="reviewSummary">
+    </div>
+
+    <a href="form.html" class="btn-back">Submit Another Review</a>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      &copy;2026 &#127801; Ivan Gonzalez &#127801;<br />
+      Last Modification: <span id="lastMod"></span>
+    </p>
+  </footer>
+
+  <script src="js/review.js"></script>
+</body>
+</html>
