@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the most impressive landscapes of Argentina: Patagonian glaciers, Iguazu Falls, Andean ravines, and more.">
+  <title>Landscapes of Argentina</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <a href="index.html" class="nav-logo" aria-label="LandscapesAR — Home">
+          Landscapes<span>AR</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="places.html">
+              <span class="nav-badge-wrap">
+                Places
+                <span id="fav-count" aria-label="saved favorites">0</span>
+              </span>
+            </a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <img
+        class="hero-bg"
+        src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600&q=80&auto=format"
+        alt="Panoramic view of the Andes with a glacial lake in the foreground"
+        width="1600"
+        height="900"
+      >
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Discover the natural beauty</p>
+          <h1 class="hero-title" id="hero-title">
+            The most spectacular<br><em>landscapes</em> in Argentina
+          </h1>
+          <p class="hero-desc">
+            From the glaciers of Patagonia to the colorful hills of the Northwest,
+            Argentina is home to some of the most extraordinary landscapes on the planet.
+          </p>
+          <div class="hero-actions">
+            <a href="places.html" class="btn btn-primary">Explore places</a>
+            <a href="contact.html" class="btn btn-ghost">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-bar" aria-label="Facts about Argentina">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <span class="stat-number">2.8M</span>
+            <span class="stat-label">km² of surface area</span>
+          </div>
+          <div>
+            <span class="stat-number">5</span>
+            <span class="stat-label">Natural regions</span>
+          </div>
+          <div>
+            <span class="stat-number">30+</span>
+            <span class="stat-label">National Parks</span>
+          </div>
+          <div>
+            <span class="stat-number">6,960m</span>
+            <span class="stat-label">Highest peak (Aconcagua)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <h2 class="section-title" id="featured-title">Featured Landscapes</h2>
+        <p class="section-subtitle">
+          A selection of the country's most emblematic natural destinations
+        </p>
+
+        <div class="featured-grid">
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img
+                src="https://torresdelpaine.com/wp-content/uploads/sites/6/2023/08/atractivo-glaciar-perito-moreno-1.jpg"
+                alt="Perito Moreno Glacier with blue ice face and floating icebergs"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+              <span class="card-region-badge">South Patagonia</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Perito Moreno Glacier</h3>
+              <p class="card-desc">
+                One of the most active glaciers in the world, declared a World Heritage Site.
+                Its imposing blue ice walls advance towards Lake Argentino, creating
+                spectacular calving events.
+              </p>
+              <a href="places.html" class="btn btn-outline btn-sm">See all places</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img
+                src="https://iguazufalls.com/wp-content/uploads/bg-new-demo-iguazu-1024x576.jpg"
+                alt="Iguazu Falls with mist and lush tropical vegetation"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+              <span class="card-region-badge">Northeast</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Iguazu Falls</h3>
+              <p class="card-desc">
+                The widest waterfall system in the world, with 275 drops spread across
+                2.7 kilometers in the heart of the Misiones jungle. An unparalleled
+                natural wonder.
+              </p>
+              <a href="places.html" class="btn btn-outline btn-sm">See all places</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img
+                src="https://cdn.britannica.com/01/122401-050-BCF5A6DB/Nahuel-Huapi-National-Park-Argentina.jpg"
+                alt="Nahuel Huapi Lake with snow-capped mountains reflected in turquoise waters"
+                width="800"
+                height="500"
+                loading="lazy"
+              >
+              <span class="card-region-badge">North Patagonia</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Nahuel Huapi Lake</h3>
+              <p class="card-desc">
+                The jewel of North Patagonia, this turquoise glacial lake is surrounded
+                by Andean forests and snow-capped peaks that reflect perfectly on its
+                surface.
+              </p>
+              <a href="places.html" class="btn btn-outline btn-sm">See all places</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="intro-grid">
+
+          <div class="intro-text">
+            <h2 class="section-title" id="intro-title">
+              A country of extraordinary contrasts
+            </h2>
+            <p>
+              Argentina is one of the countries with the greatest landscape diversity in the world.
+              In its vast territory, the subtropical jungle of the Northeast, the Patagonian
+              steppe of the South, the Andean deserts of the Northwest, and the fertile valleys
+              of Cuyo coexist.
+            </p>
+            <p>
+              Each region offers unique experiences for the traveler: trekking on ancient ice,
+              contemplating geological formations millions of years old, sighting native wildlife,
+              and much more.
+            </p>
+            <a href="places.html" class="btn btn-primary" style="margin-top:.5rem">
+              Explore all places
+            </a>
+          </div>
+
+          <div>
+            <img
+              class="intro-img"
+              src="https://static1.evcdn.net/images/reduction/1144506_w-3840_h-2160_q-70_m-crop.jpg"
+              alt="Ochre and red colored hills of the Quebrada de Humahuaca in Jujuy"
+              width="800"
+              height="600"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">Landscapes<span>AR</span></p>
+        <p>© <span id="footer-year"></span> Ivan Gonzalez.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="places.html">Places</a>
+          <a href="contact.html">Contact</a>
+          <a href="references.html">References</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

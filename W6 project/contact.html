@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with PaisajesAR. Inquire about natural destinations in Argentina or subscribe to our newsletter.">
+  <title>Contact — Landscapes of Argentina</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <a href="index.html" class="nav-logo" aria-label="LandscapesAR — Home">
+          Landscapes<span>AR</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="places.html">
+              <span class="nav-badge-wrap">
+                Places
+                <span id="fav-count" aria-label="saved favorites">0</span>
+              </span>
+            </a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="form-layout">
+
+          <div class="form-info">
+            <h1 id="contact-title">Want to know more?</h1>
+            <p>
+              Send us your inquiry about any of the landscapes of Argentina.
+              We reply in less than 48 hours.
+            </p>
+
+            <ul class="form-perks">
+              <li class="form-perk">
+                <span class="form-perk-icon" aria-hidden="true">🗺</span>
+                <span>Route and access recommendations for each destination</span>
+              </li>
+              <li class="form-perk">
+                <span class="form-perk-icon" aria-hidden="true">📅</span>
+                <span>The best time of year to visit each region</span>
+              </li>
+              <li class="form-perk">
+                <span class="form-perk-icon" aria-hidden="true">📷</span>
+                <span>Outdoor and nature photography tips</span>
+              </li>
+              <li class="form-perk">
+                <span class="form-perk-icon" aria-hidden="true">📬</span>
+                <span>Monthly newsletter with new destinations and news</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+
+            <div
+              id="welcome-banner"
+              class="welcome-banner"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+            <div class="contact-form">
+
+              <form
+                id="contact-form"
+                method="post"
+                action="#"
+                novalidate
+                aria-label="Contact form"
+              >
+                <fieldset>
+                  <legend class="sr-only">Your contact details</legend>
+
+                  <div class="form-group">
+                    <label for="nombre">Full name <span aria-hidden="true">*</span></label>
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      autocomplete="name"
+                      required
+                      minlength="2"
+                      placeholder="e.g., Jane Doe"
+                      aria-describedby="nombre-error"
+                      aria-invalid="false"
+                    >
+                    <span class="field-error" id="nombre-error" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email address <span aria-hidden="true">*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      required
+                      placeholder="e.g., jane@example.com"
+                      aria-describedby="email-error"
+                      aria-invalid="false"
+                    >
+                    <span class="field-error" id="email-error" role="alert"></span>
+                  </div>
+
+                </fieldset>
+
+                <fieldset>
+                  <legend class="sr-only">Inquiry details</legend>
+
+                  <div class="form-group">
+                    <label for="region">Region of interest</label>
+                    <select id="region" name="region" autocomplete="off">
+                      <option value="ninguna">— Select a region —</option>
+                      <option value="Patagonia Sur">South Patagonia</option>
+                      <option value="Patagonia Norte">North Patagonia</option>
+                      <option value="Noreste">Northeast</option>
+                      <option value="Noroeste">Northwest</option>
+                      <option value="Cuyo">Cuyo</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mensaje">Message <span aria-hidden="true">*</span></label>
+                    <textarea
+                      id="mensaje"
+                      name="mensaje"
+                      required
+                      minlength="10"
+                      placeholder="Write your inquiry here..."
+                      aria-describedby="mensaje-error"
+                      aria-invalid="false"
+                    ></textarea>
+                    <span class="field-error" id="mensaje-error" role="alert"></span>
+                  </div>
+
+                </fieldset>
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                  >
+                  <label for="newsletter">
+                    I want to receive the monthly newsletter with new landscapes and updates.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%">
+                  Send message
+                </button>
+
+              </form>
+
+              <div id="form-success" class="form-success" role="status" aria-live="polite">
+                <div class="success-icon" aria-hidden="true">✅</div>
+                <h3>Message sent!</h3>
+                <p id="success-msg"></p>
+              </div>
+
+            </div></div>
+
+        </div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">Landscapes<span>AR</span></p>
+        <p>© <span id="footer-year"></span> LandscapesAR.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="places.html">Places</a>
+          <a href="contact.html">Contact</a>
+          <a href="references.html">References</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contacto.js"></script>
+</body>
+</html>

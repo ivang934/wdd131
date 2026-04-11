@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the six most impressive natural landscapes in Argentina. Filter by region and save your favorites.">
+  <title>Places — Landscapes of Argentina</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+
+        <a href="index.html" class="nav-logo" aria-label="LandscapesAR — Home">
+          Landscapes<span>AR</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="places.html">
+              <span class="nav-badge-wrap">
+                Places
+                <span id="fav-count" aria-label="saved favorites">0</span>
+              </span>
+            </a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h1>Places to Discover</h1>
+        <p>Explore the most spectacular landscapes of Argentina. Filter by region and save your favorites.</p>
+
+        <div class="filter-btns" role="group" aria-label="Filter by region">
+          <button class="filter-btn active" data-region="all">All</button>
+          <button class="filter-btn" data-region="patagonia-sur">South Patagonia</button>
+          <button class="filter-btn" data-region="patagonia-norte">North Patagonia</button>
+          <button class="filter-btn" data-region="noreste">Northeast</button>
+          <button class="filter-btn" data-region="noroeste">Northwest</button>
+          <button class="filter-btn" data-region="cuyo">Cuyo</button>
+        </div>
+
+        <p class="fav-counter-bar" id="fav-counter" aria-live="polite">
+          Loading favorites...
+        </p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="places-grid" aria-label="Landscape gallery" aria-live="polite">
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">Landscapes<span>AR</span></p>
+        <p>© <span id="footer-year"></span> LandscapesAR.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="places.html">Places</a>
+          <a href="contact.html">Contact</a>
+          <a href="references.html">References</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/places.js"></script>
+</body>
+</html>
